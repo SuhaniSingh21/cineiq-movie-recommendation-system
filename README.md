@@ -124,15 +124,16 @@ cineiq/
 │── app.py               # Streamlit app  
 │── queries.sql          # SQL analytics  
 │── README.md  
-📊 Project Highlights
 
-✔ End-to-end data pipeline
-✔ Integration of ML + NLP + SQL
-✔ Real-world dataset handling
-✔ Modular code architecture
-✔ Interactive web application
+ # Project Highlights
 
-🔮 Future Improvements
+1. End-to-end data pipeline
+2. Integration of ML + NLP + SQL
+3. Real-world dataset handling
+4. Modular code architecture
+5.  Interactive web application
+
+# Future Improvements
 Hybrid recommender (content + collaborative filtering)
 User-based personalization
 Model evaluation metrics (Precision@K, Recall)
