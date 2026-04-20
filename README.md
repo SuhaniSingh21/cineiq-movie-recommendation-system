@@ -31,6 +31,7 @@ Uses data insights to improve recommendations
 TF-IDF + Cosine Similarity
 Uses overview, genres, and keywords
 Returns relevant, content-based suggestions
+
 🔹 Sentiment-Aware Filtering
 NLP-based sentiment analysis (VADER)
 Enhances recommendations using emotional tone
