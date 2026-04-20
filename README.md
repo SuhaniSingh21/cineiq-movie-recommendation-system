@@ -1,83 +1,108 @@
-# cineiq-movie-recommendation-system
-AI-powered movie recommendation engine with sentiment analysis on 77,677 movies.
+🎬 CineIQ: AI-Powered Movie Recommendation & Analytics System
 
-CineIQ: Intelligent Movie Recommendation & Analytics System
+# Overview
 
-# Overview:
-CineIQ is an end-to-end data-driven movie recommendation system that combines content-based filtering, sentiment analysis, and SQL-driven analytics to deliver personalized and insight-rich movie suggestions.
+CineIQ is a full-stack data science project that delivers intelligent movie recommendations by combining machine learning, NLP, and SQL analytics.
 
-Unlike traditional recommenders, CineIQ enhances recommendations by integrating text similarity, user sentiment, and data insights, making it more context-aware and analytically robust.
+Unlike basic recommendation systems, CineIQ goes beyond similarity matching by integrating:
+
+Content-based filtering
+Sentiment-aware recommendations
+Data-driven insights using SQL
+
+The result is a multi-layered recommendation engine that is both predictive and explainable.
 
 # Problem Statement
 
-Modern streaming platforms often rely on basic recommendation logic that:
-Ignores user sentiment Lacks explainability
-Does not leverage deeper data insights
+Most movie recommendation systems:
 
-CineIQ addresses this by building a multi-layered recommendation system that combines machine learning with analytical intelligence.
+Suggest content based only on similarity
+Ignore emotional context
+Lack analytical insights
+
+CineIQ solves this by building a system that:
+
+Understands what a movie is about
+Considers how it feels (sentiment)
+Uses data insights to improve recommendations
 
 # Key Features
-🔹 Intelligent Recommendation Engine
-Built using TF-IDF Vectorization + Cosine Similarity
-Recommends movies based on content similarity (overview, genres, keywords)
+🔹 Smart Recommendation Engine
+TF-IDF + Cosine Similarity
+Uses overview, genres, and keywords
+Returns relevant, content-based suggestions
+🔹 Sentiment-Aware Filtering
+NLP-based sentiment analysis (VADER)
+Enhances recommendations using emotional tone
 
-🔹 Sentiment Analysis Integration
-Uses VADER NLP to analyze movie descriptions
-Enhances recommendations based on emotional tone
+🔹 SQL Analytics Layer
+Designed MySQL database for structured storage
+Performed analytical queries to extract:
+Genre trends
+Rating distribution
+Language insights
+Decade analysis
 
-🔹 SQL-Based Data Analytics
-Designed a structured MySQL database
-Performed advanced queries to extract insights:
-Genre popularity trends
-Language distribution
-Rating patterns
-Decade-wise analysis
+🔹 Data Engineering Pipeline
+Cleaned and processed 10,000+ records
+Feature engineering for improved model performance
 
-🔹 Data Processing Pipeline
-Cleaned and transformed 10,000+ movie records
-Feature engineering for improved recommendation quality
-
-🔹 Interactive Web Application
-Built using Streamlit
-Real-time movie recommendations with user-friendly interface
+🔹 Interactive Application
+Built with Streamlit
+Real-time movie recommendations
+Clean and user-friendly UI
 
 # System Architecture
-Raw Dataset → Data Cleaning → Feature Engineering →  Recommendation Engine → Sentiment Analysis →  SQL Analytics → Streamlit Application
+Raw Dataset  
+   ↓  
+Data Cleaning & Preprocessing  
+   ↓  
+Feature Engineering  
+   ↓  
+Recommendation Engine (TF-IDF + Cosine Similarity)  
+   ↓  
+Sentiment Analysis (NLP)  
+   ↓  
+SQL Analytics Layer  
+   ↓  
+Streamlit Web Application  
 
 # Tech Stack
-Programming & Libraries
-Python (Pandas, NumPy, Scikit-learn)
-NLP (VADER)
-Data & Database
+
+🔹 Programming
+Python
+
+🔹 Libraries
+Pandas, NumPy
+Scikit-learn
+NLTK (VADER)
+
+🔹 Database
 MySQL
 SQLAlchemy
-Visualization & App
+
+🔹 Visualization & App
 Streamlit
-Concepts Used
-Content-Based Filtering
-Natural Language Processing (NLP)
-Data Cleaning & EDA
-SQL Analytics
 
-# Key Insights from Data
-High-rated movies often belong to drama and thriller genres
-Popularity does not always correlate with higher ratings
-English-language movies dominate dataset, but regional films show strong ratings
-Movies with moderate runtime (~90–120 mins) tend to perform better
+# Key Insights
+High popularity ≠ high rating
+Drama & thriller genres dominate high ratings
+English movies dominate volume, but regional films often score higher
+Optimal runtime (~90–120 mins) correlates with better ratings
 
-# Sample SQL Analysis
-Top-rated movies with credibility filtering
-Genre-wise movie distribution
-Decade-based trend analysis
-Runtime segmentation insights
+# Sample Analysis
+Top-rated movies (credibility filtered)
+Genre distribution trends
+Decade-wise movie performance
+Language-based insights
 
-# How to Run the Project
-1. Clone Repository
+# Getting Started
+1️. Clone the Repository
 git clone https://github.com/SuhaniSingh21/cineiq-movie-recommendation-system
 cd cineiq-movie-recommendation-system
-2. Install Dependencies
+2️. Install Dependencies
 pip install -r requirements.txt
-3. Setup Environment Variables
+3️. Setup Environment Variables
 
 Create a .env file:
 
@@ -86,22 +111,32 @@ DB_PASSWORD=your_password
 DB_HOST=localhost
 DB_PORT=3306
 DB_NAME=cineiq_db
-4. Run Application
+4️. Run the Application
 streamlit run app.py
 
-# Project Highlights
+# Project Structure
+cineiq/
+│── data/                # Raw & cleaned datasets  
+│── eda.py               # Data preprocessing  
+│── load.py              # Database loading  
+│── recommend.py         # Recommendation logic  
+│── sentiment.py         # NLP sentiment analysis  
+│── app.py               # Streamlit app  
+│── queries.sql          # SQL analytics  
+│── README.md  
+📊 Project Highlights
 
 ✔ End-to-end data pipeline
 ✔ Integration of ML + NLP + SQL
 ✔ Real-world dataset handling
-✔ Modular and scalable code structure
-✔ Interactive application deployment
+✔ Modular code architecture
+✔ Interactive web application
 
-# Future Enhancements
-Hybrid recommendation system (content + collaborative filtering)
+🔮 Future Improvements
+Hybrid recommender (content + collaborative filtering)
 User-based personalization
-Real-time data integration
-Advanced model evaluation metrics
+Model evaluation metrics (Precision@K, Recall)
+Cloud deployment
 
 # Author
 Suhani Singh
