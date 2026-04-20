@@ -1,4 +1,4 @@
-🎬 CineIQ: AI-Powered Movie Recommendation & Analytics System
+# CineIQ: AI-Powered Movie Recommendation & Analytics System
 
 # Overview
 
