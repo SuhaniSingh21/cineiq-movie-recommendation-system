@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from urllib.parse import quote_plus
 
 # Password with special characters handled safely
-password = quote_plus("SuH@nI00")
+password = quote_plus("your_Password")
 
 print("Connecting to MySQL...")
 engine = create_engine(f'mysql+mysqlconnector://root:{password}@127.0.0.1:3306/cineiq_db')
@@ -17,4 +17,4 @@ print("Inserting into MySQL... (5-10 mins)")
 df.to_sql('movies', con=engine, if_exists='replace', 
           index=False, chunksize=1000)
 
-print("🎉 Done! All movies inserted!")
+print("All movies inserted!")
