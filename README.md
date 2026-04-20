@@ -45,7 +45,7 @@ Language insights
 Decade analysis
 
 🔹 Data Engineering Pipeline
-Cleaned and processed 10,000+ records
+Cleaned and processed 77,677+ records
 Feature engineering for improved model performance
 
 🔹 Interactive Application
