@@ -11,9 +11,7 @@ Unlike traditional recommenders, CineIQ enhances recommendations by integrating 
 # Problem Statement
 
 Modern streaming platforms often rely on basic recommendation logic that:
-
-Ignores user sentiment
-Lacks explainability
+Ignores user sentiment Lacks explainability
 Does not leverage deeper data insights
 
 CineIQ addresses this by building a multi-layered recommendation system that combines machine learning with analytical intelligence.
