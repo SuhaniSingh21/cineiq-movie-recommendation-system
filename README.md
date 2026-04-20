@@ -22,9 +22,11 @@ CineIQ addresses this by building a multi-layered recommendation system that com
 🔹 Intelligent Recommendation Engine
 Built using TF-IDF Vectorization + Cosine Similarity
 Recommends movies based on content similarity (overview, genres, keywords)
+
 🔹 Sentiment Analysis Integration
 Uses VADER NLP to analyze movie descriptions
 Enhances recommendations based on emotional tone
+
 🔹 SQL-Based Data Analytics
 Designed a structured MySQL database
 Performed advanced queries to extract insights:
@@ -32,17 +34,17 @@ Genre popularity trends
 Language distribution
 Rating patterns
 Decade-wise analysis
+
 🔹 Data Processing Pipeline
 Cleaned and transformed 10,000+ movie records
 Feature engineering for improved recommendation quality
+
 🔹 Interactive Web Application
 Built using Streamlit
 Real-time movie recommendations with user-friendly interface
 
 # System Architecture
-Raw Dataset → Data Cleaning → Feature Engineering →  
-Recommendation Engine → Sentiment Analysis →  
-SQL Analytics → Streamlit Application
+Raw Dataset → Data Cleaning → Feature Engineering →  Recommendation Engine → Sentiment Analysis →  SQL Analytics → Streamlit Application
 
 # Tech Stack
 Programming & Libraries
